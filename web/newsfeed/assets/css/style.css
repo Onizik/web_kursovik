@@ -41,7 +41,7 @@ img:hover{opacity:0.75}
 .header_bottom{background-color:#fff; display:inline; float:left; padding:15px 30px 15px; width:100%}
 .logo_area{display:inline; float:left; width:31%}
 .logo{font-size:45px; font-weight:bold; color:#000; font-family:'Varela',sans-serif}
-.logo img{max-width:100%}
+.logo img{max-width:50%}
 .logo img:hover{opacity:1}
 .logo > span{ margin-left:-14px}
 
