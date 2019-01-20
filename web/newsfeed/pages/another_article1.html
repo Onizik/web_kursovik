@@ -1,11 +1,91 @@
- <section id="contentSection">
+<!DOCTYPE html>
+<html>
+<head>
+<title>NewsFeed | Pages | Single Page</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/animate.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/font.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/li-scroller.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/jquery.fancybox.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/theme.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+<script src="https://vk.com/js/api/openapi.js?160" type="text/javascript"></script>
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
+
+<script type="text/javascript">
+  VK.init({apiId: 6826785, onlyWidgets: true});
+</script>
+</head>
+<body>
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+<header>
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="header_bottom">
+          <div class="logo_area"><a href="../index.html" class="logo"><img src="../images/logo.jpg" alt=""></a></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="navArea">
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav main_nav">
+          <li class="active"><a href="../index.html"><span class="fa fa-home desktop-home"></span><span class="mobile-show">Home</span></a></li>
+          <li><a href="#">Technology</a></li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mobile</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Android</a></li>
+              <li><a href="#">Samsung</a></li>
+              <li><a href="#">Nokia</a></li>
+              <li><a href="#">Walton Mobile</a></li>
+              <li><a href="#">Sympony</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Laptops</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+<section>
+          <div class="social_area">
+            <ul class="social_nav">
+              <li class="facebook"><a href="#"></a></li>
+              <li class="twitter"><a href="#"></a></li>
+              <li class="flickr"><a href="#"></a></li>
+              <li class="pinterest"><a href="#"></a></li>
+              <li class="googleplus"><a href="#"></a></li>
+              <li class="vimeo"><a href="#"></a></li>
+              <li class="youtube"><a href="#"></a></li>
+              <li class="mail"><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contentSection">
     <div class="row">
       <div class="col-lg-8 col-md-8 col-sm-8">
         <div class="left_content">
           <div class="single_page">
             <ol class="breadcrumb">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="#">Technology</a></li>
+              <li class="active">Mobile</li>
             </ol>
-            <h1>PERSONA 5 REVIEW</h1>
+             <h1>PERSONA 5 REVIEW</h1>
             <h4> A strong story and tremendous sense of style make this the best entry in the series yet.</h4>
             <div class="single_page_content">
             <img class="img-center" src="../images/persona/main.jpg" alt="">
@@ -61,3 +141,49 @@
 <h4>Persona 5 is a massive, gorgeous JRPG with well over 100 hours of gameplay for completionists. With more to do than ever and the series’ strongest story to date, it stands out as an extraordinary, memorable experience and easily one of the deepest JRPGs of the last decade. Its sprawling dungeon design and stylish, fully realized world are an absolute joy to explore, and even after three playthroughs and the Platinum trophy, I find myself itching to go back to try different dialogue options with Confidants or revisit particularly fun puzzles. This is a new gold standard for Japanese RPGs and by far the best entry in the series yet.</h4>
             </div>
          
+         <!-- Put this div tag to the place, where the Like block will be -->
+<div id="vk_like"></div>
+<script type="text/javascript">
+VK.Widgets.Like("vk_like", {type: "button"});
+</script>
+     
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <aside class="right_content">
+          <div class="single_sidebar">
+            <h2><span>Popular Post</span></h2>
+            <ul class="spost_nav">
+              <li>
+                <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="../images/post_img1.jpg"> </a>
+                  <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 1</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="../images/post_img2.jpg"> </a>
+                  <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 2</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="../images/post_img1.jpg"> </a>
+                  <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 3</a> </div>
+                </div>
+              </li>
+              <li>
+                <div class="media wow fadeInDown"> <a href="single_page.html" class="media-left"> <img alt="" src="../images/post_img2.jpg"> </a>
+                  <div class="media-body"> <a href="single_page.html" class="catg_title"> Aliquam malesuada diam eget turpis varius 4</a> </div>
+                </div>
+              </li>
+            </ul>
+          </div>  
+		</div>
+
+
+<script src="../assets/js/jquery.min.js"></script> 
+<script src="../assets/js/wow.min.js"></script> 
+<script src="../assets/js/bootstrap.min.js"></script> 
+<script src="../assets/js/slick.min.js"></script> 
+<script src="../assets/js/jquery.li-scroller.1.0.js"></script> 
+<script src="../assets/js/jquery.newsTicker.min.js"></script> 
+<script src="../assets/js/jquery.fancybox.pack.js"></script> 
+<script src="../assets/js/custom.js"></script>
+</body>
+</html>
