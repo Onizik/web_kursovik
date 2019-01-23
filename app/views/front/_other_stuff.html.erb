@@ -2,7 +2,10 @@
 
 <div id="vk_like"></div>
 <script type="text/javascript">
- VK.Widgets.Like('vk_like');
+window.onload = function () {
+ VK.init({apiId: 111, onlyWidgets: true});
+ VK.Widgets.Like('vk_like', {width: 500, pageTitle: 'Статья номер 321'}, 321);
+}
 </script>
 <p>Zdarov</p>
 
