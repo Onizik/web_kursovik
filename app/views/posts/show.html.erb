@@ -1,0 +1,26 @@
+<section id="contentSection">
+  <div class="row">
+    <div class="col-lg-8 col-md-8 col-sm-8">
+      <% if current_user %>
+        <%= link_to 'edit', edit_post_path(@post), class: 'btn btn-dark' %>
+        <%= link_to 'delete', post_path(@post), method: 'delete', class: 'btn btn-dark' %>
+      <% end %>
+      <div class="left_content">
+        <div class="single_page">
+          <ol class="breadcrumb">
+          </ol>
+          <h1> <%= @post.title %></h1>
+          <div class="single_page_content">
+            <%= image_tag @post.images[0].url %>
+            <br><br>
+            <% @texts.each_index do |index| %>
+              <p> <%= @texts[index] %> </p>
+              <%= image_tag(@post.images[index].url) if index != 0 %>
+              <br>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
