@@ -1,5 +1,0 @@
-<% if current_user %>
-  <%= link_to "разлогиниться", destroy_user_session_path, method: 'delete', class: "btn btn-danger devise-panel" %>
-<% else %>
-  <%= link_to "залогиниться", new_user_session_path, class: "btn btn-success devise-panel" %>
-<% end %>

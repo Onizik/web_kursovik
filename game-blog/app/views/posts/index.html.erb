@@ -1,19 +1,15 @@
 
-<%#= render 'front/side' %>
 
+<div class="col-lg-8 col-md-8 col-sm-8">
+  <% @posts.each do |post| %>
+  <div class="single_iteam"> <%= link_to image_tag(post.images[0].url), post %>
+    <div class="slider_article">
+      <h2> <%= link_to post.title, class: 'slider_tittle' %> </h2>
+      <p> <%= post.text.tr('@', '')[0..100] %> </p>
+    </div>
+  </div>
+  <% end %>>
 
+</div>
 
-<%# @posts.each do |post| %>
-<!--  <div class="col-lg-8 col-md-8 col-sm-8">-->
-<!--    <div class="single_iteam"> <!--<a href="pages/persona_article.html"> <img src="images/persona.jpg" alt=""></a>-->
-<!--      <div class="slider_article">-->
-<!--        <h2><a class="slider_tittle" href="pages/another_article.html"><%#= link_to post.title, post %>></a></h2>-->
-<!--        <p><%#= post.text[0..100] %>></p>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<%# end %>
-
-<!--<br>-->
-
-<%#= link_to 'New Post', new_post_path %>
+<%= render 'front/side', posts: @posts %>

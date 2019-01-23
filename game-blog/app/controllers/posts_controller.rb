@@ -11,6 +11,8 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @texts = @post.text.split('@')
+    @texts += ['']
   end
 
   # GET /posts/new
@@ -70,8 +72,8 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params2 = params.require(:post).permit(:title, :text)
-      params2[user_id: current_user.id]
+      params2 = params.require(:post).permit(:title, :text, {images: []})
+      params2[:user_id] =  current_user.id
       params2
     end
 end
