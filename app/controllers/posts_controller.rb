@@ -12,7 +12,7 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
     @texts = @post.text.split('@')
-    @texts += ['']
+    (@texts += ['']) if @post.text.last == '@'
   end
 
   # GET /posts/new
