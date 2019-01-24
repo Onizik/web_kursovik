@@ -39,7 +39,7 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav main_nav">
         <% @post_types.each do |type| %>
-          <li> <%= link_to type.title, posts_path, post_type_id: type.id %> </li>
+          <li> <%= link_to type.title, posts_path(post_type_id: type.id) %> </li>
         <% end %>
         </ul>
         <ul class="nav navbar-nav navbar-right">
