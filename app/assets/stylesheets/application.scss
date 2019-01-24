@@ -15,7 +15,7 @@
  */
 
 
-body{background:#b3daff}
+body{background:#f2f2f2}
 ul{padding:0; margin:0; list-style:none}
 a{text-decoration:none; color:#2f2f2f}
 a:focus{outline:none; text-decoration:none}
@@ -31,7 +31,7 @@ img{border:none}
 .transition{-webkit-transition:all 0.5s; -moz-transition:all 0.5s; -ms-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s}
 
 
-#header{display:inline; float:left; width:100%; margin-top:20px}
+#header{display:inline; float:left; width:100%;}
 .header_top{background-color:#2c2c2c; display:inline; float:left; padding:0 30px; width:100%}
 .header_top_left{float:left; display:inline; width:50%}
 .top_nav{text-align:left}
@@ -133,3 +133,4 @@ a:focus{border-width:0; border-color:#ddd #ddd transparent; color:#fff}
 }
 .field textarea {width:500px; height:300px}
 .form-control {width:30%}
+#contentSection{}
