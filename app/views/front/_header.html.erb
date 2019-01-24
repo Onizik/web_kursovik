@@ -10,8 +10,6 @@
             <li> <%= link_to 'home', root_path %> </li>
             <li><a href="#">About</a></li>
             <li><a href="http://asoiu.com/">ASOIU</a></li>
-          </ul>
-            <ul class="nav navbar-nav navbar-right">
             <li>
             <% if current_user %>
               <%= link_to "log out", destroy_user_session_path, method: 'delete' %>
