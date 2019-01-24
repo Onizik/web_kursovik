@@ -15,12 +15,14 @@
             <br><br>
             <% @texts.each_index do |index| %>
               <p> <%= @texts[index] %> </p>
-              <%= image_tag(@post.images[index + 1].url) unless if @post.images.length > index%>
+              <%= image_tag(@post.images[index + 1]&.url) if index < @post.images.length - 1 %>
               <br>
             <% end %>
           </div>
         </div>
       </div>
     </div>
+    <%= render 'front/side', posts: @posts %>
   </div>
 </section>
+

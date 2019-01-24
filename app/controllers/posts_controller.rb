@@ -6,22 +6,28 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
+    if params[:post_type_id]
+      @posts = Post.all.where(post_type_id: params[:post_type_id])
+    end
   end
 
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @posts = Post.all
     @texts = @post.text.split('@')
     (@texts += ['']) if @post.text.last == '@'
   end
 
   # GET /posts/new
   def new
+    @post_types = PostType.all
     @post = Post.new
   end
 
   # GET /posts/1/edit
   def edit
+    @post_types = PostType.all
   end
 
   # POST /posts

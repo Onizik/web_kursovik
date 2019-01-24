@@ -26,6 +26,12 @@
     <%= form.file_field :images, multiple: true %>
   </div>
 
+    <div class="form-group">
+      <%= form.label :type %>
+      <%= form.select :post_type_id, post_types.collect{|type| [type.title, type.id]},
+                   {include_blank: "without type"}, class: 'form-control' %>
+    </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
