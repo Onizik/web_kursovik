@@ -15,7 +15,7 @@
  */
 
 
-body{background:#f5f5f5}
+body{background:#b3daff}
 ul{padding:0; margin:0; list-style:none}
 a{text-decoration:none; color:#2f2f2f}
 a:focus{outline:none; text-decoration:none}
@@ -27,9 +27,7 @@ img{border:none}
 
 
 .default-btn{background-color:#12a3df; color:#fff}
-.default-btn:hover{background-color:#0a8ec4; color:#fff}
 .btn-theme{background-color:#d083cf; color:#fff}
-.btn-theme:hover{background-color:#ce39cc; color:#fff}
 .transition{-webkit-transition:all 0.5s; -moz-transition:all 0.5s; -ms-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s}
 
 
@@ -42,7 +40,7 @@ img{border:none}
 .top_nav li a:hover{background-color:#d083cf}
 .header_top_right{float:left; display:inline; width:50%; text-align:right}
 .header_top_right > p{color:#fff; display:inline-block; float:right; font:bold 12px sans-serif; margin-bottom:0; padding-bottom:20px; padding-right:8px; padding-top:20px}
-.header_bottom{background-color:#fff; display:inline; float:left; padding:15px 30px 15px; width:100%}
+.header_bottom{display:inline; float:left; padding:15px 30px 15px; width:100%}
 .logo_area{display:inline; float:left; width:31%}
 .logo{font-size:45px; font-weight:bold; color:#000; font-family:'Varela',sans-serif}
 .logo img{max-width:50%}
