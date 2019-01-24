@@ -1,8 +1,4 @@
-<div class="CreatePost">
-  <div class  ="row centered">
-          <form class="form-horizontal" id=NameForm>
-            <div class="form-group">
-              <div class="row centred">
+
   <%= form_with(model: post, local: true) do |form| %>
   <% if post.errors.any? %>
     <div id="error_explanation">
@@ -34,8 +30,3 @@
     <%= form.submit %>
   </div>
 <% end %>
-</div>
-</div>
-</form>
-</div>
-</div>
